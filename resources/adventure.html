@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="adv.css">
+</head>
+<body>
+    <div id="firstbody">
+        <div id="leftwin">
+            
+        </div>
+
+        <div id="fieldgame">
+            <div id="set"></div>
+            <div id="king">
+                <div id="blokirking"></div>
+                <div id="theking"></div>
+            </div>
+            <div id="character" onclick="normal()"></div>          
+        </div>
+
+        <div id="rightwin">
+            <div id="knighthome1">
+                <div id="no1"></div>
+                <div id="knight1"></div>
+            </div>
+            <div id="knighthome2">
+                <div id="no2"></div>
+                <div id="knight2">
+                    <div id="knight2outer">
+                        <div id="theknight">
+                        <div id="bow">
+                            <div id="arrow1"></div>
+                            <div id="arrow2"></div>
+                            <div id="arrow3"></div>
+                            <div id="arrow4"></div>
+                            <div id="arrow5"></div>
+                        </div>
+                    </div>
+                </div>   
+                </div>
+            </div>
+            <div id="stars">
+                <div id="blokir"></div>
+                <div id="star1"></div>
+                <div id="star2"></div>
+                <div id="star3"></div>
+                <div id="star4"></div>
+                <div id="star5"></div>
+            </div>
+        </div>    
+    </div>
+    <div id="secondbody">
+        <div id="startgame" onclick="start()"></div>
+        <div id="pause" onclick="died()" ondblclick="live()"></div>
+        <div id="jumpgame">
+            <div id="jumpcontrol" onclick="jumping()"></div>
+        </div>
+        <div id="controlgame">
+            <div id="buttoncontrol">
+                <div id="upbut"></div>
+                <div id="buttons">
+                    <button id="buttonup" onclick="up()" ondblclick="run()"></button>
+                    <button id="buttonright" onclick="right()" ondblclick="run()"></button>
+                    <button id="buttonleft" onclick="left()" ondblclick="run()"></button>
+                    <button id="buttondown" onclick="down()" ondblclick="run()"></button>
+                </div>
+            </div>
+        </div>
+        <div id="shootgame">
+            <div id="shootcontrol" onclick="shootarrow()" onmouseover="readytoshoot()" onmouseleave="loose()"></div>
+        </div>
+        <div id="stab" onclick="stabbing()"></div>
+        <div id="exitgame"></div>
+    </div>
+    <div id="thirdbody">
+        <div id="beginboard" onclick="begingame()"></div>
+    </div>
+
+<script src="adv.js">
+   
+</script>
+</body>
+
+</html>

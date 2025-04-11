@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure</title>
+    <link rel="stylesheet" href="resources/advent1.css">
+</head>
+<body onload="welcome()">
+    <div id="firstbody">
+        <div id="leftwin">
+            
+        </div>
+
+        <div id="fieldgame">
+            <div id="set">
+                <div id="totalcoin">
+                    <p>your coin : <span id="cointotal"></span></p>
+                </div>
+               <div id="rules">
+                <p>your mission is to collect all coins, kill all the monsters, kill the witch, 
+                    get the potion after killing the witch.
+                    after that create a portal to enter a new stage and win the game</p>
+               </div>
+            </div>
+            <!-- <div id="king">
+                <div id="blokirking"></div>
+                <div id="theking"></div>
+            </div> -->
+            <div id="character" onclick="normal()"></div>  
+            <div id="soulvolume">
+            </div>        
+        </div>
+
+        <div id="rightwin">
+            <div id="knighthome2">
+                <div id="no2"></div>
+                <div id="knight2">
+                    <div id="knight2outer">
+                        <div id="theknight">
+                        <div id="bow">
+                            <div id="arrow1"></div>
+                            <div id="arrow2"></div>
+                            <div id="arrow3"></div>
+                            <div id="arrow4"></div>
+                            <div id="arrow5"></div>
+                        </div>
+                    </div>
+                </div>   
+                </div>
+            </div>
+
+            <div id="stairs">
+                <div id="blokir"></div>
+                <div id="stair1">
+                    <div id="limiter">
+                        <div id="limiterladder"></div>
+                        <div id="ladder"></div>
+                        <div id="ladder"></div>
+                    </div>
+                    <div id="stars1">
+                        <div id="stars1coin1"></div>
+                        <div id="stars1coin2"></div>
+                        <div id="stars1coin3"></div>
+                        <div id="stars1coin4"></div>
+                        <div id="stars1coin5"></div>
+                        <div id="stars1coin6"></div>
+                        <div id="stars1coin7"></div>
+                        <div id="stars1coin8"></div>
+                        <div id="stars1coin9"></div>
+                        <div id="stars1coin10"></div>
+                        <div id="stars1coin11"></div>
+                    </div>
+                </div>
+                <div id="stair2">
+                    <div id="limiter">
+                        <div id="limiterladder"></div>
+                        <div id="ladder"></div>
+                        <div id="ladder"></div>
+                    </div>
+                    <div id="stars2">
+                        <div id="stars2coin1"></div>
+                        <div id="stars2coin2"></div>
+                        <div id="stars2coin3"></div>
+                        <div id="stars2coin4"></div>
+                        <div id="stars2coin5"></div>
+                        <div id="stars2coin6"></div>
+                        <div id="stars2coin7"></div>
+                        <div id="stars2coin8"></div>
+                        <div id="stars2coin9"></div>
+                        <div id="stars2coin10"></div>
+                        <div id="stars2coin11"></div>
+                    </div>
+                </div>
+                <div id="stair3">
+                    <div id="limiter">
+                        <div id="limiterladder"></div>
+                        <div id="ladder"></div>
+                    </div>
+                    <div id="stars3">
+                        <div id="stars3coin1"></div>
+                        <div id="stars3coin2"></div>
+                        <div id="stars3coin3"></div>
+                        <div id="stars3coin4"></div>
+                        <div id="stars3coin5"></div>
+                        <div id="stars3coin6"></div>
+                        <div id="stars3coin7"></div>
+                        <div id="stars3coin8"></div>
+                        <div id="stars3coin9"></div>
+                        <div id="stars3coin10"></div>
+                        <div id="stars3coin11"></div>
+                        
+                    </div>
+                </div>
+                <div id="stair4">
+                    <div id="limiter">
+                        <div id="limiterladder"></div>
+                        <div id="ladder"></div>
+                    </div>
+                    <div id="stars4">
+                        <div id="stars4coin1"></div>
+                        <div id="stars4coin2"></div>
+                        <div id="stars4coin3"></div>
+                        <div id="stars4coin4"></div>
+                        <div id="stars4coin5"></div>
+                        <div id="stars4coin6"></div>
+                        <div id="stars4coin7"></div>
+                        <div id="stars4coin8"></div>
+                        <div id="stars4coin9"></div>
+                        <div id="stars4coin10"></div>
+                        <div id="stars4coin11"></div>
+                    </div>
+                </div>
+                <div id="lowerstair">
+                    <div id="limiter"></div>
+                    <div id="lowerstars">
+                        <div id="lowerstarscoin1"></div>
+                        <div id="lowerstarscoin2"></div>
+                        <div id="lowerstarscoin3"></div>                   
+                    </div>
+                </div>
+            </div>
+            <div id="stairenemies">
+                <div id="enemy1container">
+                    <div id="limiter"></div>
+                    <div id="enemy1"></div>
+                </div>
+                <div id="enemy2container">
+                    <div id="limiter"></div>
+                    <div id="enemy2"></div>
+                </div>
+                <div id="enemy3container">
+                    <div id="limiter"></div>
+                    <div id="enemy3"></div>
+                </div>
+                <div id="enemy4container">
+                    <div id="limiter"></div>
+                    <div id="enemy4"></div>
+                </div>
+            </div>
+            <div id="stairwitch">
+                <div id="witchcontainer">
+                    <div id="limiter"></div>
+                    <div id="thewitch">
+                        <div id="limiter">
+                            <div id="fireball"></div>
+                        </div>
+                        <div id="potion"></div>
+                        <div id="stone"></div>
+                        <div id="popinfo">
+                            <p id="poptext">Jump on The Tree Trunk to bring down the ladder to the witch</p>
+                        </div>
+                        <div id="portal"></div>
+                    </div>
+                    
+                </div>
+                <div id="limiter">
+                    <div id="limiterladder"></div>
+                    <div id="ladderwitch1"></div>
+                    <div id="ladderwitch2"></div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div id="secondbody">
+        <div id="startgame" onclick="start()"></div>
+        <div id="pause" onclick="restart()" ondblclick="live()"></div>
+        <div id="jumpgame">
+            <div id="jumpcontrol" onclick="jumping()"></div>
+        </div>
+        <div id="controlgame">
+            <div id="buttoncontrol">
+                <div id="upbut"></div>
+                <div id="buttons">
+                    <button id="buttonup" onclick="up()" ondblclick="run()"></button>
+                    <button id="buttonright" onclick="right()" ondblclick="run()"></button>
+                    <button id="buttonleft" onclick="left()" ondblclick="run()"></button>
+                    <button id="buttondown" onclick="down()" ondblclick="run()"></button>
+                </div>
+            </div>
+        </div>
+        <div id="shootgame">
+            <div id="shootcontrol" onclick="shootarrow()" onmouseover="readytoshoot()" onmouseleave="loose()"></div>
+        </div>
+        <div id="stab" onclick="stabbing()"></div>
+        <div id="exitgame"></div>
+        
+    </div>
+    <div id="thirdbody">
+        <div id="beginboard" onclick="begingame()"></div>
+    </div>
+    <div id="fourthbody">
+        <div id="gameover"></div>
+    </div>
+    <div id="fifthbody">
+        <div id="playmusic" onclick="playMusic()"></div>
+        <audio id="audioPlayer" src="music/8-Bit Fantasy & Adventure Music.mp3"></audio>
+    </div>
+    <div id="sixthbody">
+        <div id="welcome"></div>
+    </div>
+
+    
+<script src="resources/advent1.js">
+   
+</script>
+</body>
+
+</html>

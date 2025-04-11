@@ -1,0 +1,72 @@
+function right(){
+        theKnight.style.width = "40px"
+        horizondirect = 1
+        horizontal = horizontal + 25
+        knight2.style.marginLeft = horizontal - 500 + "px"
+        theKnight.style.transform = "scaleX(1)"        
+        move()
+
+        if(vertical === 75 && horizontal > -50){
+            fall()
+        }
+
+        if(vertical === 225 && horizontal >= -25){
+            fall2()
+        }
+
+        if(vertical === 25 && horizontal > 450){
+            fall3()
+        }
+
+        if(vertical === 150 && horizontal > 450){
+            fall4()
+        }
+
+        if(vertical === 25){
+            if(horizontal === 200){
+                document.getElementById("coin1").style.opacity = "0"
+            }
+            if(horizontal === 225){
+               document.getElementById("coin2").style.opacity = "0"
+            }
+            if(horizontal === 250){
+                document.getElementById("coin3").style.opacity = "0"
+            }
+            if(horizontal === 275){
+               document.getElementById("coin4").style.opacity = "0"
+            }
+            if(horizontal === 300){
+                document.getElementById("coin5").style.opacity = "0"
+            }
+            if(horizontal === 325){
+                document.getElementById("coin6").style.opacity = "0"
+            }
+            if(horizontal === 350){
+                document.getElementById("coin7").style.opacity = "0"
+            }
+            if(horizontal === 375){
+                document.getElementById("coin8").style.opacity = "0"
+            }
+            if(horizontal === 400){
+                document.getElementById("coin9").style.opacity = "0"
+            }
+            if(horizontal === 425){
+                document.getElementById("coin10").style.opacity = "0"
+            }
+            if(horizontal === 450){
+               document.getElementById("coin11").style.opacity = "0"
+            }
+        }
+       
+
+        console.log("horizontal " + horizontal)
+        return horizontal
+    }
+
+
+    //falling from the ladder of land of the witch
+        if(vertical >= 175 && vertical <= 300){
+            if(horizontal >= 200){
+                alert("must fall")
+            }
+        }

@@ -1,0 +1,869 @@
+body{
+    background-color: rgb(92, 90, 90);
+    background-image: url("images/rocks.jpg");
+    background-size: 100px;
+    overflow: hidden;
+}
+#firstbody {
+    width: 100%;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    /* background-color: aqua; */
+    background-image: url("images/rocks.jpg");
+    background-size: 100px;
+    
+}
+#fieldgame {
+    width: 840px;
+    height: 510px;
+    background-image: url("images/map.jpg");
+    background-size: 840px;
+    background-position-y: -50px;
+    margin-top: -10px;
+    opacity: 0;
+}
+#set {
+    width: 250px;
+    height: 300px;
+    /* background-color: blueviolet; */
+    background-image: url("images/display.png");
+    background-size: 580px;
+    margin-top: 20px;
+    margin-left: -280px;
+}
+#totalcoin {
+    width: 150px;
+    height: 70px;
+    /* background-color: blueviolet; */
+    margin-left: 80px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+#cointotal {
+    color: white;
+    font-weight: bold;
+}
+#rules {
+    width: 150px;
+    height: 200px;
+    /* background-color: blueviolet; */
+    margin-left: 80px;
+    margin-top: -20px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#character {
+    width: 130px;
+    height: 200px;
+    /* background-color: pink; */
+    margin-left: -220px;
+    background-image: url("images/greenknight.png");
+    background-position-x: -220px;
+    background-size: 350px;
+    margin-top: -3px;
+    transform: scaleX(-1);
+}
+
+#soulvolume {
+    width: 240px;
+    height: 30px;
+    /* background-color: rgb(13, 238, 13); */
+    background-image: url("images/star.png");
+    background-size: 30px;
+    margin-top: -500px;
+    margin-left: 300px;
+}
+#king {
+    width: 100px;
+    height: 5px;
+    /* background-color: yellow; */
+}
+#blokirking {
+    width: 100px;
+    height: 5px;
+    /* background-color: orange; */
+}
+#theking {
+    width: 100px;
+    height: 100px;
+    /* background-color: yellow; */
+    /* background-image: url("images/knightrider.png"); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70px;
+    margin-top: 30px;
+    margin-left: 350px;
+    transform: scaleX(-1);
+}
+#leftwin {
+    width: 100px;
+    height: 500px;
+    /* background-color: blueviolet; */
+}
+#blokir {
+    width: 100px;
+    height: 5px;
+    /* background-color: blueviolet; */
+}
+#stairs {
+    width: 100px;
+    height: 5px;
+    /* background-color: rgb(179, 255, 0); */
+}
+#stairenemies {
+    width: 100px;
+    height: 5px;
+    /* background-color: rgb(240, 0, 196); */
+    opacity: 0;
+}
+#enemy1container {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(2, 135, 87); */
+    margin-top: 190px;
+    margin-left: -820px;
+}
+#enemy1 {
+    width: 60px;
+    height: 60px;
+    background-image: url("images/green\ moster.gif");
+    background-repeat: no-repeat;
+    background-size: 60px;
+    transition-timing-function: linear;
+    /* background-color: blue; */
+    transition-duration: 1s;
+    margin-top: -70px;
+    margin-left: 245px;
+    transform: scaleX(-1);
+}
+#enemy2container {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(2, 135, 87); */
+    margin-top: 130px;
+    margin-left: -820px;
+}
+#enemy2 {
+    width: 60px;
+    height: 60px;
+    background-image: url("images/ghost.gif");
+    background-repeat: no-repeat;
+    background-size: 120px;
+    background-position: center;
+    transition-timing-function: linear;
+    /* background-color: blue; */
+    transition-duration: 1s;
+    margin-top: -70px;
+    margin-left: 245px;
+    transform: scaleX(-1);
+}
+#enemy3container {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(2, 135, 87); */
+    margin-top: -110px;
+    margin-left: -320px;
+}
+#enemy3 {
+    width: 80px;
+    height: 100px;
+    background-image: url("images/egg.gif");
+    /* background-image: url("images/monster\ saur.gif"); */
+    background-repeat: no-repeat;
+    background-size: 100px;
+    background-position: center;
+    transition-timing-function: linear;
+    /* background-color: blue; */
+    transition-duration: 1s;
+    /* margin-top: -90px; */
+    margin-top: -110px;
+    margin-left: 235px;
+}
+
+#enemy4container {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(2, 135, 87); */
+    margin-top: 120px;
+    margin-left: -320px;
+}
+#enemy4 {
+    width: 60px;
+    height: 60px;
+    background-image: url("images/wood\ monster.gif");
+    background-repeat: no-repeat;
+    background-size: 130px;
+    background-position: center;
+    transition-timing-function: linear;
+    /* background-color: blue; */
+    transition-duration: 1s;
+    margin-top: -73px;
+    margin-left: 245px;
+    transform: scaleX(-1);
+}
+
+#stair1 {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/road.jpg");
+    background-size: 60%;
+    background-position: center;
+    background-position-y: -30px;
+    margin-top: 190px;
+    margin-left: -820px;
+}
+#stair2 {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/road.jpg");
+    background-size: 60%;
+    background-position: center;
+    background-position-y: -30px;
+    margin-top: 50px;
+    margin-left: -320px;
+}
+#stair3 {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/road.jpg");
+    background-size: 60%;
+    background-position: center;
+    background-position-y: -30px;
+    margin-top: 60px;
+    margin-left: -820px;
+}
+#stair4 {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/road.jpg");
+    background-size: 60%;
+    background-position: center;
+    background-position-y: -30px;
+    margin-top: 30px;
+    margin-left: -320px;
+}
+#lowerstair {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(214, 0, 100); */
+    margin-left: -550px;
+}
+#limiter {
+    width: 300px;
+    height: 20px;
+}
+#limiterladder {
+    width: 20px;
+    height: 5px;
+}
+#ladder, #ladderwitch1, #ladderwitch2 {
+    width: 20px;
+    height: 70px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/ladder.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+}
+#ladderwitch1 {
+    margin-top: -73px;
+    margin-left: -320px;
+    /* opacity: 0; */
+    transition: 3s;
+}
+#ladderwitch2 {
+    margin-top: -30px;
+    margin-left: -320px;
+    /* opacity: 0; */
+    transition: 3s;
+}
+#stars1, #stars2, #stars3, #stars4, #lowerstars {
+    width: 280px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: rgb(0, 255, 162); */
+    /* background-image: url("images/coin2.png"); */
+    background-size: 20px;
+    margin-top: -50px;
+    margin-left: 20px;
+    /* 20px maju ke kanan */
+}
+#lowerstars {
+    width: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+#stars1coin1, #stars1coin2, #stars1coin3 ,#stars1coin4, #stars1coin5, #stars1coin6, #stars1coin7, #stars1coin8, #stars1coin9, #stars1coin10, #stars1coin11 {
+    width: 20px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/coin2.png");
+    background-size: 20px;
+}
+#stars2coin1, #stars2coin2, #stars2coin3 ,#stars2coin4, #stars2coin5, #stars2coin6, #stars2coin7, #stars2coin8, #stars2coin9, #stars2coin10, #stars2coin11 {
+    width: 20px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/coin2.png");
+    background-size: 20px;
+}
+#stars3coin1, #stars3coin2, #stars3coin3 ,#stars3coin4, #stars3coin5, #stars3coin6, #stars3coin7, #stars3coin8, #stars3coin9, #stars3coin10, #stars3coin11 {
+    width: 20px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/coin2.png");
+    background-size: 20px;
+}
+#stars4coin1, #stars4coin2, #stars4coin3 ,#stars4coin4, #stars4coin5, #stars4coin6, #stars4coin7, #stars4coin8, #stars4coin9, #stars4coin10, #stars4coin11 {
+    width: 20px;
+    height: 20px;
+    /* background-color: rgb(0, 255, 162); */
+    background-image: url("images/coin2.png");
+    background-size: 20px;
+}
+#lowerstarscoin1, #lowerstarscoin2, #lowerstarscoin3 {
+    width: 20px;
+    height: 20px;
+    background-image: url("images/coin2.png");
+    background-size: 20px;
+    margin-top: -40px;
+}
+
+#rightwin {
+    width: 100px;
+    height: 500px;
+    /* background-color: blueviolet; */
+}
+#knighthome2 {
+    width: 100px;
+    height: 10px;
+    /* background-color: green; */
+}
+#no2 {
+    width: 100px;
+    height: 10px;
+    /* background-color: lightgreen; */
+}
+#knight2 {
+    width: 40px;
+    height: 50px;
+    /* background-color: orange; */
+    margin-top: 370px;
+    margin-left: -500px;
+    transition-duration: .5s;
+    transition-timing-function: ease-out;
+    opacity: 0;
+}
+#knight2outer {
+    width: 40px;
+    height: 50px;
+    /* background-color: yellow; */
+    transition: .6s;
+}
+#theknight{
+    width: 40px;
+    height: 50px;
+    background-image: url("images/greenknight.png");
+    background-repeat: no-repeat;
+    /* background-color: blueviolet; */
+
+    /* knight standing */
+    background-position-x: -14px;
+    background-position-y: -9px;
+    /* animation-duration: 1s; */
+
+    /* knight jumping */
+    /* background-position-x: -14px;
+    background-position-y: -285px;
+    animation-duration: 1s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+    animation-name: jump; */
+
+    /* knight death */
+    /* background-position-x: -14px;
+    background-position-y: -228px;
+    animation-duration: 1s;
+    animation-timing-function: steps(6);
+    animation-iteration-count: infinite;
+    animation-name: die; */
+}
+#bow {
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+}
+#arrow1, #arrow2, #arrow3, #arrow4, #arrow5 {
+    width: 50px;
+    height: 50px;
+    /* background-color: red; */
+    background-image: url("images/arrow.png");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    transform:rotate(90deg);
+    background-position-x: 8px;
+    transition: 0s;
+    animation-timing-function: ease-in;
+    opacity: 0;
+}
+#arrow2 {
+    margin-top: -50px;
+    opacity: 0;
+}
+#arrow3 {
+    margin-top: -50px;
+    opacity: 0;
+}
+#arrow4 {
+    margin-top: -50px;
+    opacity: 0;
+}
+#arrow5 {
+    margin-top: -50px;
+    opacity: 0;
+}
+
+#stairwitch {
+    width: 100px;
+    height: 5px;
+    /* background-color: rgb(13, 168, 150); */
+    opacity: 0;
+}
+#witchcontainer {
+    width: 300px;
+    height: 20px;
+    /* background-color: rgb(2, 0, 47); */
+    background-image: url("images/road.jpg");
+    background-size: 60%;
+    background-position: center;
+    background-position-y: -30px;
+    margin-top: -83px;
+    margin-left: -320px;
+}
+
+#thewitch {
+    width: 60px;
+    height: 60px;
+    background-image: url("images/witch.gif");
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: center;
+    transition-timing-function: linear;
+    /* background-color: blue; */
+    transition-duration: 1s;
+    margin-top: -77px;
+    margin-left: 245px;
+    transform: scaleX(-1);
+}
+#fireball {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/fireball.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    transition: 2s;
+    opacity: 0;
+}
+#potion {
+    width: 30px;
+    height: 30px;
+    background-image: url("images/potion.gif");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    margin-left: 40px;
+    margin-top: 8px;
+    transition: 5s;
+}
+#stone {
+    width: 40px;
+    height: 20px;
+    background-image: url("images/trunk3.webp");
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position-y: 5px;
+    margin-left: 240px;
+    margin-top: 130px;
+}
+#popinfo {
+    width: 150px;
+    height: 150px;
+    background-image: url("images/popinfo.png");
+    background-repeat: no-repeat;
+    background-size: 150px;
+    transform: scaleX(-1);
+    margin-top: -140px;
+    margin-left: 95px;
+    font-family: fantasy;
+    font-size: 13px;
+    color: white;
+    opacity: 0;
+}
+#portal {
+    width: 100px;
+    height: 100px;
+    background-image: url("images/portal3.png");
+    /* background-color: aliceblue; */
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: center;
+    margin-top: -250px;
+    margin-left: 0px;
+    transition: 2s;
+    opacity: 0;
+}
+#poptext {
+    padding-left: 25px;
+    padding-right: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#secondbody {
+    width: 100%;
+    height: 300px;
+    /* background-color: rgb(174, 255, 0); */
+    background-image: url("images/wood.jpg");
+    background-size: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+#startgame {
+    width: 150px;
+    height: 150px;
+    background-image: url("images/thestart.png");
+    background-size: 280px;
+    background-position: center;
+    /* background-color: aliceblue; */
+}
+#startgame:hover {
+    background-size: 200px;
+}
+
+#pause {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(155, 204, 95);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-image: url("images/restart.jfif");
+    background-size: 70px;
+    transition: 0.5s;
+}
+#pause:hover {
+    transform: rotate(90deg);
+}
+
+#jumpgame {
+    width: 150px;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+#jumpcontrol {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(155, 204, 95);
+    background-image: url("images/jumpicon.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 50%;
+    transition: .2s;
+}
+#jumpcontrol:hover {
+    transform: rotate(90deg);
+}
+#controlgame {
+    width: 150px;
+    height: 150px;
+    background-image: url("images/wood.jpg");
+    background-size: 350px;
+    background-position: center;
+    border-radius: 50%;
+    /* margin-left: 600px; */
+    margin-top: -50px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: 10px;
+    border-color: white;
+    opacity: 0;
+}
+
+#buttoncontrol {
+    width: 150px;
+    height: 150px;
+    /* background-color: rgb(255, 248, 47); */
+    background-image: url("images/control.png");
+    background-size: 150px;
+}
+#upbut {
+    width: 150px;
+    height: 22px;
+    /* background-color: blueviolet; */
+}
+#buttons {
+    width: 150px;
+    height: 150px;
+    transform: rotate(45deg);
+}
+#buttonup, #buttonleft, #buttonright, #buttondown {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+    background-image: url("images/buttonmove.png");
+    background-size: 58px;
+    background-position: center;
+    transform: rotate(-45deg);
+    /* opacity: 0; */
+}
+#buttonup:hover, #buttonleft:hover, #buttonright:hover, #buttondown:hover {
+    opacity: 0;
+}
+#buttonup {
+    background-color: brown;
+    transform: rotate(-135deg);
+   
+}
+#buttondown {
+    background-color: coral;
+    transform: rotate(45deg);
+}
+#buttonleft {
+    background-color: cadetblue;
+    transform: rotate(135deg);
+}
+#buttonright {
+    background-color: chartreuse;
+}
+
+#shootgame {
+    width: 150px;
+    height: 150px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+}
+#shootcontrol {
+    width: 70px;
+    height: 70px;
+    background-image: url("images/shooticon.png");
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+#shootcontrol:hover {
+    background-image: url("images/shooticon2.png");
+}
+
+#stab {
+    width: 70px;
+    height: 70px;
+    background-color: rgb(155, 204, 95);
+    background-image: url("images/stab.webp");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+#stab:hover {
+    background-color: red;
+}
+
+#exitgame {
+    width: 150px;
+    height: 150px;
+    background-image: url("images/theexit.png");
+    background-size: 280px;
+    background-position: center;
+    /* background-color: aliceblue; */
+}
+#exitgame:hover {
+    background-size: 200px;
+}
+
+/* BADAN KETIGA */
+#thirdbody {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-image: url("images/rocks.jpg");
+    background-size: 100px;
+}
+#beginboard {
+    width: 350px;
+    height: 200px;
+    /* background-color: aquamarine; */
+    margin-top: -150px;
+    background-image: url("images/beginn.png");
+    background-repeat: no-repeat;
+    background-size: 300px;    
+    background-position: center;     
+    /* opacity: 0%; */
+}
+#beginboard:hover {
+    background-size: 350px;
+    background-position: center;
+}
+
+/* BADAN KE EMPAT */
+#fourthbody {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("images/rocks.jpg"); */
+    /* background-color: green; */
+    background-size: 100px;
+}
+#gameover {
+    width: 950px;
+    height: 600px;
+    /* background-color: aquamarine; */
+    margin-top: -150px;
+    background-image: url("images/over.png");
+    background-repeat: no-repeat;
+    background-size: 600px;    
+    background-position: center;     
+    /* opacity: 0%; */
+    /* margin-top: -900px; */
+}
+
+/* BADAN KELIMA */
+#fifthbody {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("images/rocks.jpg"); */
+    /* background-color: green; */
+    background-size: 100px;
+}
+#play {
+    color: white;
+    font-weight: bolder;
+    margin-top: -900px;
+    margin-left: -200px;
+}
+#playmusic {
+    width: 100px;
+    height: 100px;
+    /* background-color: rgb(23, 123, 210); */
+    margin-top: -850px;
+    margin-left: 1050px;
+    background-image: url("images/musicicon.webp");
+    background-size: 100px;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    transition-duration: 1s;
+    opacity: 0;
+}
+#playmusic:hover {
+    transform: rotate(90deg);
+}
+
+/* BADAN KE ENAM */
+#sixthbody {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    /* background-image: url("images/rocks.jpg"); */
+    background-color: green;
+    background-size: 100px;
+}
+#welcome {
+    width: 950px;
+    height: 500px;
+    /* background-color: aquamarine; */
+    background-image: url("images/LOGO.png");
+    background-size: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -980px;
+    transition: 3s;
+}
+
+@keyframes playSprite {
+    from {
+        background-position-x: -5px;
+    }
+    to {
+        background-position-x: -520px; 
+    }
+}
+
+@keyframes playSprite2 {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: -320px; 
+    }
+}
+
+@keyframes playSprite3 {
+    from {
+        background-position-x: -14px;
+    }
+    to {
+        background-position-x: -579px; 
+    }
+}
+@keyframes shootarrow {
+    from {
+        background-position-x: -14px;
+    }
+    to {
+        background-position-x: -200px; 
+    }
+}
+@keyframes stabb {
+    0% {
+        background-position-x: -4px;
+    }
+    100% {
+        background-position-x: -315px; 
+    }
+}
+@keyframes jump {
+    0% {
+        background-position-x: -11px;
+    }
+    100% {
+        background-position-x: -362px; 
+    }
+}
+@keyframes die {
+    0% {
+        width: 40px;
+        background-position-x: -8px;
+    }
+    100% {
+        width: 55px;
+        background-position-x: -305px; 
+    }
+}
